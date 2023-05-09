@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1b244a;
+  width: 575px;
+  height: 385px;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: verdana;
+  color: #eeeeee;
+  margin-bottom: 0px;
+}
+
+h4 {
+  font-size: 90px;
+  font-family: "Cursed Timer ULiL", sans-serif;
+  color: #f94f6d;
+  background-color: #080001;
+  padding: 15px 0px 0px 0px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+#timer {
+  font-size: 30px;
+  height: 30px;
+  margin-top: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+button {
+  color: #9aabd8;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border-color: #9aabd8;
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #1b244a;
+  font-family: "Cursed Timer ULiL", sans-serif;
+}
+
+#next_round {
+  margin-top: 135px;
+}
+
+#reset {
+  position: relative;
+  margin-top: 40px;
+}
+
+#period {
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+h5 {
+  font-family: verdana;
+  color: #eeeeee;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
