@@ -53,20 +53,21 @@ function resettimer() {
 }
 
 function updatetimer() {
-  const minutes = Math.floor(time / 60).toLocaleString(undefined, {
-    minimumIntegerDigits: 2,
-  });
-  let seconds = (time % 60).toLocaleString(undefined, {
-    minimumIntegerDigits: 2,
-  });
-
-  timer.innerText = minutes + ":" + seconds;
   time--;
 
   if (time < 0) {
     clearInterval(countdown);
-    countdown = null;
-    timer.innerHTML = "00:00";
+  } else {
+    const minutes = Math.floor(time / 60).toLocaleString(undefined, {
+      minimumIntegerDigits: 2,
+    });
+    const seconds = (time % 60).toLocaleString(undefined, {
+      minimumIntegerDigits: 2,
+    });
+
+    if (timer) {
+      timer.innerText = `${minutes}:${seconds}`;
+    }
   }
 }
 
